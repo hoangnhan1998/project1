@@ -26,7 +26,7 @@
 				$_SESSION['product']=$product;
 			}
 
-			header('location:hai.php?quanly=dathang&&#Restaurant');
+			header('location:index.php?quanly=dathang&&#Restaurant');
 		}
 		
 	}
@@ -51,7 +51,7 @@
 			$_SESSION['product']=$product;
 			}
 			
-			header('location:hai.php?quanly=dathang&&#Restaurant');
+			header('location:index.php?quanly=dathang&&#Restaurant');
 		}
 		
 	}
@@ -63,13 +63,13 @@
 				$product[]=array('tensp'=>$cart_item['tensp'],'id'=>$cart_item['id'],'soluong'=>$cart_item['soluong'],'gia'=>$cart_item['gia']);
 			}
 		$_SESSION['product']=$product;
-		header('location:hai.php?quanly=dathang&&#Restaurant');
+		header('location:index.php?quanly=dathang&&#Restaurant');
 		}
 	}
 	//xóa toàn bộ giỏ hàng
 	if(isset($_GET['xoatoanbo'])&&$_GET['xoatoanbo']==1){
 		session_destroy();
-		header('location:hai.php?quanly=dathang&&#Restaurant');
+		header('location:index.php?quanly=dathang&&#Restaurant');
 	}
 	//thêm sản phẩm vào giỏ hàng
 	if(isset($_POST['add_to_cart'])){
@@ -98,7 +98,7 @@
 			}else{
 				$_SESSION['product']=$new_product;
 			}
-			header('location:hai.php?quanly=chitietsp&&#Restaurant');
+			header('location:index.php?quanly=chitietsp&&#Restaurant');
 		}
 	}
 ?>
