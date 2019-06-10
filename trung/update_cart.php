@@ -1,9 +1,9 @@
 <?php
-	session_start();
-	include('trung1/config.php');
+	@session_start();
+	include('content1/right/config.php');
 
 	if(isset($_GET['thoat'])&&$_GET['thoat']==1){
-		unset($_SESSION['dangnhap']);
+		unset($_SESSION['email']);
 		header('location:index.php?quanly=dathang');
 	}
 	//trừ sản phẩm
