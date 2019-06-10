@@ -4,7 +4,7 @@
 	$_SERVER['host'] = 'localhost';
 	$_SERVER['users'] = 'root';
 	$_SERVER['passwd'] = '';
-	$_SERVER['database'] = 'shopquanao';
+	$_SERVER['database'] = 'banhang';
 
 	$query = mysql_connect($_SERVER['host'],$_SERVER['users'],$_SERVER['passwd']);
 	mysql_select_db($_SERVER['database']);
