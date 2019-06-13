@@ -23,7 +23,7 @@
   </tr>
   <tr>
     <td>Hình ảnh</td>
-    <td><input type="file" name="hinhanh" /><img src="modules/quanlysanpham/uploads/<?php echo $dong['hinhanh'] ?>" width="80" height="80"></td>
+    <td><input type="file" name="hinhanh" /><img src="modules/quanlysanpham/img/<?php echo $dong['hinhanh'] ?>" width="80" height="80"></td>
   </tr>
   <tr>
     <td>Giá đề xuất</td>

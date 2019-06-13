@@ -7,6 +7,8 @@
 				}else{
 					$conten ='';
 				}
+				include('content1/right/chitietsp.php');
+				
 				if($conten == 'chitietsp'){
 					include('content1/right/chitietsp.php');
 				}elseif($conten == 'dangkymoi'){
