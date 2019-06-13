@@ -1,5 +1,10 @@
+<style>
+.product div:hover{
+	background:#FFFF00;
+}
+</style>
 <?php
-	$sql_loaisp="select  * from sanpham where (sanpham.nhasx='$_GET[id]' and tinhtrang = '1')";
+	$sql_loaisp="select  * from sanpham where (sanpham.nhasx='$_GET[id]' and tinhtrang ='1')";
 	$num_loaisp=mysql_query($sql_loaisp);
 	$count=mysql_num_rows($num_loaisp);
 	
@@ -16,15 +21,15 @@
 						while($dong_loaisp=mysql_fetch_array($num_loaisp)){
 						?>
                         <form action="update_cart.php?id=<?php echo $dong_loaisp['idsanpham'] ?>" method="post">
-                    	<div class="sanpham" style="float:left;width:200px;margin:0px 20px 20px 0px;height:250px" align="center"><!--<a href="?quanly=chitietsp&idhieusp=<?php echo $dong_loaisp['loaisp'] ?>&id=<?php echo $dong_loaisp['idsanpham'] ?>">-->
+                    	<div class="sanpham" style="float:left;width:200px;margin:0px 20px 20px 0px;height:250px" align="center"><a href="?quanly=nhanhieusp">
                        
                         	<img src="admin/modules/quanlysanpham/img/<?php echo $dong_loaisp['hinhanh'] ?>" width="150" height="150" />
                             <p><?php echo $dong_loaisp['tensp'] ?></p>
                             <input type="text" value="1" name="soluong" style="display:none">
                             <p><?php echo $dong_loaisp['giadexuat'] ?></p>
                             
-                        	<input type="submit" name="add_to_cart" value="mua hang" >
-                        <!--</a>--></div></form>
+                        	<button type="submit" name="add_to_cart" value="nhanhieusp">Mua Hàng</button>
+                       </a></div></form>
                        <?php
 						}
 	}else{
