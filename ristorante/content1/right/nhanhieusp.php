@@ -21,7 +21,7 @@
 						while($dong_loaisp=mysql_fetch_array($num_loaisp)){
 						?>
                         <form action="update_cart.php?id=<?php echo $dong_loaisp['idsanpham'] ?>" method="post">
-                    	<div class="sanpham" style="float:left;width:200px;margin:0px 20px 20px 0px;height:250px" align="center"><a href="?quanly=nhanhieusp">
+                    	<div class="sanpham" style="float:left;width:200px;margin:0px 20px 20px 0px;height:300px" align="center"><a href="?quanly=nhanhieusp">
                        
                         	<img src="admin/modules/quanlysanpham/img/<?php echo $dong_loaisp['hinhanh'] ?>" width="150" height="150" />
                             <p><?php echo $dong_loaisp['tensp'] ?></p>

@@ -15,7 +15,7 @@
           while($dong_moinhat=mysql_fetch_array($row_moinhat)){
           ?>
                     <form action="update_cart.php?id=<?php echo $dong_moinhat['idsanpham'] ?>" method="post">
-    <div class="sanpham" style="float:left;width:200px;margin:0px 20px 20px 0px;height:250px" align="center"> <img src="admin/modules/quanlysanpham/img/<?php echo $dong_moinhat['hinhanh'] ?>" width="150" height="150" />
+    <div class="sanpham" style="float:left;width:200px;margin:0px 20px 20px 0px;height:300px" align="center"> <img src="admin/modules/quanlysanpham/img/<?php echo $dong_moinhat['hinhanh'] ?>" width="150" height="150" />
       <p style="color:skyblue"><?php echo $dong_moinhat['tensp'] ?></p>
       <input type="text" value="1" name="soluong" style="display:none">
       <p style="color:red;font-weight:bold; border:1px solid #d9d9d9;
@@ -43,7 +43,7 @@
           
         ?>
     <form action="update_cart.php?id=<?php echo $dong['idsanpham'] ?>" method="post">
-      <div class="sanpham" style="float:left;width:200px;margin:0px 20px 20px 0px;height:250px" align="center"> <img src="admin/modules/quanlysanpham/img/<?php echo $dong['hinhanh'] ?>" width="150" height="150" />
+      <div class="sanpham" style="float:left;width:200px;margin:0px 20px 20px 0px;height:300px" align="center"> <img src="admin/modules/quanlysanpham/img/<?php echo $dong['hinhanh'] ?>" width="150" height="150" />
         <p style="color:skyblue"><?php echo $dong['tensp']?></p>
         <p style="color:red;font-weight:bold; border:1px solid #d9d9d9;
                             height:30px; line-height:30px;margin-bottom:5px;"><?php echo number_format($dong['giadexuat']).' '.'VNĐ' ?></p>

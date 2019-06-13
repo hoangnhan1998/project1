@@ -21,7 +21,7 @@
                      <?php
 					 if($count>0){
 						while($dong_loaisp=mysql_fetch_array($num_loaisp)){
-						?><div class="sanpham" style="float:left;width:200px;margin:0px 20px 20px 0px;height:250px" align="center">
+						?><div class="sanpham" style="float:left;width:200px;margin:0px 20px 20px 0px;height:300px" align="center">
                         <form action="update_cart.php?id=<?php echo $dong_loaisp['idsanpham'] ?>" method="post">
                     	
                        
