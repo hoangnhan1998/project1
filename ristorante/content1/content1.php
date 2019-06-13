@@ -5,10 +5,7 @@
 	$row_hieu=mysql_query($sql_hieu);
 ?>
                <div class="sidenav" style="float:left; margin-right:20px;width:250px">
-                 <a href="#about">About</a>
-                 <a href="#services">Services</a>
-                 <a href="#clients">Clients</a>
-                 <a href="#contact">Contact</a>
+                 
                  <button class="dropdown-btn">Loại 
                   </button>
                 <div class="dropdown-container">
